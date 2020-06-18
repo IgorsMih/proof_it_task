@@ -6,7 +6,7 @@ import main.java.pc.domain.PolicySubObject;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class TheftRiskCoefficientDetector {
+class TheftRiskCoefficientDetector {
 
 	private static final BigDecimal STANDARD_THEFT_RISK_COEF = new BigDecimal("0.11");
 	private static final BigDecimal OVERPRICED_THEFT_RISK_COEF = new BigDecimal("0.05");

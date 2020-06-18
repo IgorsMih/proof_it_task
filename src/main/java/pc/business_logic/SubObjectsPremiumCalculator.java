@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SubObjectsPremiumCalculator {
+class SubObjectsPremiumCalculator {
 
 	private final FireRiskCoefficientDetector fireRiskCoefficientDetector = new FireRiskCoefficientDetector();
 	private final TheftRiskCoefficientDetector theftRiskCoefficientDetector = new TheftRiskCoefficientDetector();

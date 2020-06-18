@@ -6,7 +6,7 @@ import main.java.pc.domain.PolicySubObject;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class FireRiskCoefficientDetector {
+class FireRiskCoefficientDetector {
 
 	private static final BigDecimal STANDARD_FIRE_RISK_COEF = new BigDecimal("0.014");
 	private static final BigDecimal OVERPRICED_FIRE_RISK_COEF = new BigDecimal("0.024");
