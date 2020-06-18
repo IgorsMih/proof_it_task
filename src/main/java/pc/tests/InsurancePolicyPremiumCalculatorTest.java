@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 public class InsurancePolicyPremiumCalculatorTest {
 
-	private PremiumCalculator premiumCalculator = new PremiumCalculator();
+	private final PremiumCalculator premiumCalculator = new PremiumCalculator();
 
 	public static void main(String[] args) {
 		InsurancePolicyPremiumCalculatorTest test = new InsurancePolicyPremiumCalculatorTest();
@@ -22,8 +22,8 @@ public class InsurancePolicyPremiumCalculatorTest {
 		policy.addPolicyObject(house1);
 		policy.addPolicyObject(apartment1);
 
-		PolicySubObject notebook = new PolicySubObject("Dell", new BigDecimal(100.00));
-		PolicySubObject tv = new PolicySubObject("Samsung", new BigDecimal(8.00));
+		PolicySubObject notebook = new PolicySubObject("Dell", new BigDecimal("100.00"));
+		PolicySubObject tv = new PolicySubObject("Samsung", new BigDecimal("8.00"));
 		notebook.addPolicyRisk(RiskType.FIRE);
 		tv.addPolicyRisk(RiskType.THEFT);
 
