@@ -5,12 +5,12 @@ import pc.domain.*;
 
 import java.math.BigDecimal;
 
-public class InsurancePolicyPremiumCalculatorTest {
+public class PremiumCalculatorAcceptanceTest {
 
 	private final PremiumCalculator premiumCalculator = new PremiumCalculator();
 
 	public static void main(String[] args) {
-		InsurancePolicyPremiumCalculatorTest test = new InsurancePolicyPremiumCalculatorTest();
+		PremiumCalculatorAcceptanceTest test = new PremiumCalculatorAcceptanceTest();
 		test.testPolicyForOneInsuranceObject();
 	}
 
