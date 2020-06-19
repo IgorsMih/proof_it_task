@@ -1,4 +1,4 @@
-package main.java.pc.domain;
+package pc.domain;
 
 import java.util.ArrayList;
 import java.util.List;

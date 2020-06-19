@@ -1,8 +1,8 @@
-package main.java.pc.business_logic;
+package pc.business_logic;
 
-import main.java.pc.domain.PolicyObject;
-import main.java.pc.domain.RiskType;
-import main.java.pc.domain.PolicySubObject;
+import pc.domain.PolicyObject;
+import pc.domain.RiskType;
+import pc.domain.PolicySubObject;
 
 import java.math.BigDecimal;
 import java.util.HashSet;

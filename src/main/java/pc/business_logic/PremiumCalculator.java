@@ -1,7 +1,7 @@
-package main.java.pc.business_logic;
+package pc.business_logic;
 
-import main.java.pc.domain.Policy;
-import main.java.pc.domain.PolicyObject;
+import pc.domain.Policy;
+import pc.domain.PolicyObject;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

@@ -1,7 +1,7 @@
-package main.java.pc.tests;
+package pc.tests;
 
-import main.java.pc.business_logic.PremiumCalculator;
-import main.java.pc.domain.*;
+import pc.business_logic.PremiumCalculator;
+import pc.domain.*;
 
 import java.math.BigDecimal;
 
@@ -32,6 +32,7 @@ public class InsurancePolicyPremiumCalculatorTest {
 
 		for (PolicyObject policyObject : policy.getPolicyObjects()) {
 			System.out.println(policyObject.getPolicyObjectName());
+			System.out.println(policyObject);
 		}
 
 		BigDecimal premium = premiumCalculator.calculate(policy);
