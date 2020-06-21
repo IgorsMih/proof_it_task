@@ -20,6 +20,14 @@ public class PolicySubObject {
 		this.riskTypes.add(riskType);
 	}
 
+	public String getSubObjectName() {
+		return subObjectName;
+	}
+
+	public BigDecimal getSumInsured() {
+		return sumInsured;
+	}
+
 	public List<RiskType> getPolicyRisks() {
 		return riskTypes;
 	}

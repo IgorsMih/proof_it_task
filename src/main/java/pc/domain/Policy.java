@@ -18,6 +18,14 @@ public class Policy {
 		this.policyObjects.add(policyObject);
 	}
 
+	public String getPolicyNumber() {
+		return policyNumber;
+	}
+
+	public PolicyStatus getPolicyStatus() {
+		return policyStatus;
+	}
+
 	public List<PolicyObject> getPolicyObjects() {
 		return this.policyObjects;
 	}
