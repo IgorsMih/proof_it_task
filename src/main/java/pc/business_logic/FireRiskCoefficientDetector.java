@@ -8,8 +8,8 @@ import java.util.List;
 
 class FireRiskCoefficientDetector {
 
-	private static final BigDecimal STANDARD_FIRE_RISK_COEF = new BigDecimal("0.014");
-	private static final BigDecimal OVERPRICED_FIRE_RISK_COEF = new BigDecimal("0.024");
+	private static final BigDecimal STANDARD_FIRE_RISK_COEFFICIENT = new BigDecimal("0.014");
+	private static final BigDecimal OVERPRICED_FIRE_RISK_COEFFICIENT = new BigDecimal("0.024");
 	private static final BigDecimal PRICE_BORDER = new BigDecimal("100.00");
 
 	public BigDecimal detect(List<PolicySubObject> policySubObjects) {
@@ -18,9 +18,9 @@ class FireRiskCoefficientDetector {
 				.map(PolicySubObject::getPrice)
 				.reduce(BigDecimal.ZERO, BigDecimal::add);
 		if (sumOfInsuredObjectsFromFire.compareTo(PRICE_BORDER) <= 0) {
-			return STANDARD_FIRE_RISK_COEF;
+			return STANDARD_FIRE_RISK_COEFFICIENT;
 		} else {
-			return OVERPRICED_FIRE_RISK_COEF;
+			return OVERPRICED_FIRE_RISK_COEFFICIENT;
 		}
 	}
 
