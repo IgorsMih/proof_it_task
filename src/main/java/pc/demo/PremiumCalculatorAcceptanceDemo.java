@@ -50,7 +50,7 @@ public class PremiumCalculatorAcceptanceDemo {
 		}
 
 		BigDecimal premium = premiumCalculator.calculate(policy);
-		System.out.println("\nPremium = " + premium);
+		System.out.println("\nPremium = " + premium + " EUR");
 	}
 
 }
