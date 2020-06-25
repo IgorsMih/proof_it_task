@@ -1,0 +1,32 @@
+Description of Premium calculator task from Proof IT company.
+
+The task was made by using Java 14, jUnit 4.13 with Maven, Internet, JavaGuru lessons from Java1 course,
+GitHub repository.
+
+The structure of the task is divided to four packages:
+- domain, where all objects posted;
+- business_logic, where is algorithm implementation,
+- demo, here we can see that the structure is working,
+- test - Acceptance test as was requested by Proof IT company, plus additional tests to check that
+  structure is correctly working.
+
+Demo package:
+Contains six classes.
+Three classes for Policy, Policy object and PolicySubObject as was described in specification.
+Plus three enum classes for data types that enables for a variable to be a set of predefined constants.
+It's PolicyObjectName, PolicyStatus and RiskType.
+It allow easy to add additional variables in the future, approximately new risk type or policy status.
+
+Business_logic:
+Contains four classes.
+PremiumCalculator, SubObjectPremiumCalculator, FireRiskCoefficientDetector and TheftRiskCoefficientDetector.
+PremiumCalculator and SubObjectPremiumCalculator contains logic of the task.
+FireRiskCoefficientDetector and TheftRiskCoefficientDetector are counting two risk coefficients
+as described in the specification of the task -> Premium calculation formula.
+
+Test is jUnit test that check the correct implementation of logic and formulas
+as described in the specification of the task -> Acceptance criteria
+plus two tests to cover additional options.
+
+The task was committed to my repository on GitHub.
+Link https://github.com/IgorsMih/proof_it_task.
